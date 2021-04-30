@@ -348,6 +348,20 @@ footer p{
         padding: 0px;
     }
 
+    .aboutMe{
+        height: auto;
+       
+        padding: 20px;
+    }
+  
+
+    .aboutFlex{
+         display: flex;
+       align-items: center;
+        flex-direction: column;
+        
+    }
+
     .contact{
      
         height: auto;
@@ -365,5 +379,29 @@ footer p{
 
     ul {
         flex-wrap: wrap;
+
+    }
+
+    .projText{
+   opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+background: rgba(355,355,355,0.6);
+    height: 80%;
+    width: 95%;
+ 
+}
+
+    .headerImg{display: none;}
+
+    .headerText{
+       margin:0px;
+       padding: 0px;
+       text-align: center;
+    }
+
+    h3, h4{
+        text-align: center;
     }
 }
