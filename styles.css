@@ -26,6 +26,9 @@ h3{
     text-transform:  uppercase;
 }
 
+h4{
+    font-size: 1.5rem;
+}
 .wrapper{
 max-width: 1200px;
 width: 95%;
@@ -103,22 +106,28 @@ justify-content: space-between;
 }
 
 .projText{
-    display: flex;
-align-items: center;
+    background: rgba(355,355,355,0);
+    align-items: center;
     flex-direction: column;
-
     height: 80%;
     width: 95%;
+    opacity: 0;
+}   
+
+.projText:hover{
+   opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+background: rgba(355,355,355,0.6);
+    height: 80%;
+    width: 95%;
+ 
 }
 
 .projOne{
     background-image: url('./assets/image-1.png');
     
-}
-
-.projOne:hover{
-    background-image: url('./assets/image-1.png');
-    opacity: 0.5;
 }
 
 .projTwo{
@@ -187,6 +196,8 @@ justify-content: space-around;
     width: 30%;
     height: 80vh;
 }
+
+
 
 .languages, .aboutMe, .contact{
     height: 60vh;
@@ -259,13 +270,54 @@ width: auto;
 display: block;
 }
 
-form{
-display: flex;
-flex-direction: column;
+.contact {
+         background-color: lightblue;
+         display: flex;
+         align-items: center;
 
 }
 
+form{
+display: flex;
+flex-direction: column;
+height: 40VH;
+justify-content: space-around;
+
+}
+
+
+
 .flexContact{
     display: flex;
+    
+     align-items: center;
+     justify-content: center;
+              height: 45vh;
 
+
+}
+
+.contactText{
+    width: 50%;
+    text-align: center;
+}
+
+.contactForm{
+    width: 50%;
+  
+}
+
+footer p{
+    text-align: center;
+    background-color: lightcoral;
+    margin: 0px;
+    padding: 10px
+}
+
+#message{
+    height: 50%;
+}
+
+.proj ul li{
+    padding: 5px;
 }
