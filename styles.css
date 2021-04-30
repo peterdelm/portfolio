@@ -30,38 +30,32 @@ h3{
 max-width: 1200px;
 width: 95%;
 margin: 0 auto;
-border: 2px solid purple;
+
 }
 
-header{
-    
-    border: 2px solid green;
-
-   
-}
 
 .headerFlex{
     height: 100vh;
-    border: 2px solid green;
+
 }
 
 
 
 .headerFlex{
     display: flex;
-        border: 2px solid red;
+      
  
   height: 100vh;
 }
 
 nav{
     display:flex;
-    border: 2px solid red;
+ 
 }
 
 
 .headerInfo{
-border: 2px solid green;
+
 height: 100vh;
 display: flex;
 flex-direction: column;
@@ -69,7 +63,7 @@ justify-content: space-around;
 }
 
 .headerNav{
-border: 2px solid orange;
+
 display: flex;
 justify-content: space-between;
 }
@@ -77,7 +71,7 @@ justify-content: space-between;
 .headerSocial{
     font-size: 3rem;
     display: flex;
-    border: 2pSx solid red;
+
   flex-wrap: wrap;
   justify-content: space-around;
 
@@ -100,7 +94,7 @@ background-image: url('./assets/image-3.png');
 }
 
 .headerImg{
-    border: 2px solid blue;
+
     background-image: url('./assets/bio_photo.jpg');
     background-color: white;
     width: 100%;
@@ -111,12 +105,6 @@ background-image: url('./assets/image-3.png');
 }
 
 
-img{
-width: 100%;
-height: auto;
-max-height: 100%;
-display: block;
-}
 
 ul{
     display: flex;
@@ -128,19 +116,24 @@ ul li{
 }
 
 .projects{
-    border: 2px solid red;
+
     height: 100vh;
 }
 
 .projFlex{
 display: flex;
 justify-content: center;
-border: 2px solid green;
+
 justify-content: space-around;
 }
 
 .proj{
-    border: 2px solid blue;
+    background-color: white;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     width: 30%;
     height: 80vh;
 }
@@ -149,27 +142,26 @@ justify-content: space-around;
     height: 60vh;
 }
 
-.competencies li{
+.languages li{
     display: flex;
+    padding-left: 20px;
 }
 
 .aboutFlex {
-    border: 2px solid red;
+
     display: flex;
 }
 
-.aboutImg{
-    border: 2px solid blue;
-}
+
 
 .aboutText{
         display: flex;
-    border: 2px solid blue;
+ 
     align-items: center;
 }
 
 .headerSocial ul{
-    border: 2px solid red;
+ 
     display: flex;
    width: 30vw;
    text-decoration: none;
@@ -178,12 +170,12 @@ justify-content: space-around;
 
 .textContainer{
     margin: 10px;
-    border: 2px solid green;
+
 }
 
 .headerText{
     margin: 10px;
-    border: 2px solid orange;
+
    
 }
 
@@ -192,13 +184,21 @@ justify-content: space-around;
     height: auto;
 }
 
+
+img{
+
+height: 60vh;
+width: auto;
+display: block;
+}
+
 form{
 display: flex;
 flex-direction: column;
-border: 2px solid blue;
+
 }
 
 .flexContact{
     display: flex;
-    border: 2px solid red;
+
 }
