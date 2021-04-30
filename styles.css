@@ -28,6 +28,7 @@ h3{
 
 h4{
     font-size: 1.5rem;
+        color: #810017
 }
 .wrapper{
 max-width: 1200px;
@@ -210,14 +211,14 @@ justify-content: space-around;
 
 .aboutMe{
     display: flex;
-   
+   background-color: rgb(210, 226, 232);
     justify-content: center;
+    align-items: center;
 
-    margin: 40px;
 }
 
 .aboutFlex {
-width: 80%;
+    width: 80%;
     display: flex;
     justify-content: center;
 }
@@ -271,7 +272,7 @@ display: block;
 }
 
 .contact {
-         background-color: lightblue;
+         background-color: rgb(210, 226, 232);
          display: flex;
          align-items: center;
 
@@ -309,9 +310,11 @@ justify-content: space-around;
 
 footer p{
     text-align: center;
-    background-color: lightcoral;
+    background-color: #810017;
     margin: 0px;
-    padding: 10px
+    padding: 10px;
+    color:  rgb(210, 226, 232);
+
 }
 
 #message{
@@ -320,4 +323,12 @@ footer p{
 
 .proj ul li{
     padding: 5px;
+}
+
+.aboutMe h3{
+ color: #810017
+}
+
+.contact h3{
+ color: #810017
 }
