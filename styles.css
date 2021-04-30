@@ -332,3 +332,38 @@ footer p{
 .contact h3{
  color: #810017
 }
+
+@media (max-width: 750px) {
+    .projects{
+        height: auto;
+    }
+
+    .projFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .proj{
+        width:95%;
+        margin: 20px;
+        padding: 0px;
+    }
+
+    .contact{
+     
+        height: auto;
+    }
+
+    .flexContact{
+        flex-direction: column;
+        height: auto;
+    align-items: center;
+    }
+
+    .languages{
+        height: auto;
+    }
+
+    ul {
+        flex-wrap: wrap;
+    }
+}
