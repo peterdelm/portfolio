@@ -276,6 +276,10 @@ nav {
     display: flex;
 }
 
+.headerText h2 {
+    font-size: 42px;
+}
+
 .headerInfo {
     height: 100vh;
     display: flex;
