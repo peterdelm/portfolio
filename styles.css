@@ -325,6 +325,11 @@ nav {
   padding: 10px 20px;
   /* border: 2px solid red; */
   width: 100%;
+  font-size: 1.5rem;
+}
+
+.navContainer li {
+  padding: 0 20px;
 }
 
 .headerText h2 {
@@ -611,6 +616,14 @@ footer p {
 
 .contact h3 {
   color: #810017;
+}
+
+.word {
+  height: 100%;
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em "tahoma";
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
 @media (max-width: 750px) {
