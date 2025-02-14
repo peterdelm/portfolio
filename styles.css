@@ -18,8 +18,48 @@ section {
   display: block;
 }
 header {
-  background-color: #333;
-  color: white;
+  background-color: #0e100f;
+  color: #6ec1e4;
+}
+.headerIcon i {
+  color: #6ec1e4;
+}
+
+.headerIcon {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+}
+
+.headerIcon {
+  position: absolute;
+  bottom: 0%;
+  right: 49%;
+  font-size: 2rem;
+  -webkit-animation: bop 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: bop 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@-webkit-keyframes bop {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    -webkit-transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes bop {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    -webkit-transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem);
+    opacity: 0;
+  }
 }
 h1 {
   font-size: 2em;
@@ -237,12 +277,12 @@ template {
 }
 
 html {
-  font-family: "montserrat";
+  font-family: "nunito";
 }
 
 h1 {
   font-size: 5.5rem;
-  font-family: "montserrat";
+  font-family: "nunito";
   margin: 0px;
   padding: 0px;
 }
@@ -261,13 +301,14 @@ h4 {
   max-width: 95%;
   width: 95%;
   margin: 0 auto;
-  /* border: 5px solid red; */
 }
-
+nav {
+  border-bottom: 2px solid #ffffff;
+}
 p,
 a,
 li {
-  font-family: "montserrat";
+  font-family: "nunito";
   font-weight: 400;
 }
 
@@ -323,9 +364,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  /* border: 2px solid red; */
   width: 100%;
   font-size: 1.5rem;
+  background-color: #0e100f;
 }
 
 .navContainer li {
@@ -353,12 +394,12 @@ nav {
   font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 25%;
 }
 .headerSocialContainer a:visited {
-  color: white;
+  color: black;
 }
 .headerTextImage {
   display: flex;
@@ -381,10 +422,24 @@ nav {
   list-style: none;
 }
 
-.proj {
-  display: flex;
+.socialLink {
+  margin: 20px;
 }
 
+.proj {
+  background-color: #fff;
+  width: 30%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.proj:hover {
+  transform: scale(1.05);
+}
 .projText {
   display: flex;
   flex-direction: column;
@@ -398,6 +453,7 @@ nav {
   height: 100%;
   width: 100%;
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .projText:hover {
@@ -445,6 +501,7 @@ ul li {
 
 .projects {
   height: 100vh;
+  margin-top: 40px;
 }
 
 .projFlex {
@@ -474,6 +531,7 @@ ul li {
 .languages {
   height: auto;
   text-align: center;
+  margin-top: 50px;
 }
 
 .languages ul {
@@ -517,6 +575,25 @@ ul li {
 .aboutContainer {
   display: flex;
   justify-content: center;
+  margin: 50px;
+}
+/* To make the image a circle and smaller */
+.aboutImg .imgContainer {
+  width: 300px; /* Adjust this to the size you want */
+  height: 300px; /* Same as width to make it a perfect circle */
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+  border-radius: 50%; /* Makes the container a circle */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  margin-right: 100px;
+}
+
+/* To make the image fit inside the circle */
+.aboutImg .headerImage {
+  width: 100%; /* Makes the image fill the container */
+  height: 100%; /* Keeps the image proportional */
+  object-fit: cover; /* Ensures the image fills the circle and crops it if necessary */
 }
 
 .aboutText {
@@ -568,6 +645,7 @@ img {
   background-color: rgb(210, 226, 232);
   display: flex;
   align-items: center;
+  margin-top: 50px;
 }
 
 form {
@@ -582,7 +660,7 @@ form {
 
   align-items: center;
   justify-content: center;
-  height: 45vh;
+  height: 25vh;
 }
 
 .contactText {
@@ -649,9 +727,6 @@ footer p {
     top: 20px;
     right: 20px;
   }
-  .projects {
-    height: auto;
-  }
 
   .projFlex {
     flex-direction: column;
@@ -687,6 +762,7 @@ footer p {
 
   .languages {
     height: auto;
+    margin-top: 50px;
   }
 
   ul {

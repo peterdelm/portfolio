@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peter Del Mastro</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/276b65d818.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .animated-text {
+        font-size: 100px;
+        font-weight: bold;
+      }
+    </style>
   </head>
 
   <body>
@@ -42,39 +51,39 @@
             <div class="headerTextImage">
               <div class="headerTextSocial">
                 <div class="headerText">
-                  <h1>Peter Del Mastro</h1>
-                  <h2>is a <span>Developer</span></h2>
-                  <div class="headerSocialContainer">
-                    <div class="socialLink">
-                      <a
-                        href="https://www.linkedin.com/in/peter-del-mastro-8b7981207/"
-                        ><i class="fab fa-linkedin"></i
-                      ></a>
-                    </div>
-                    <div class="socialLink">
-                      <a href="https://twitter.com/mastro_peter"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </div>
-                    <div class="socialLink">
-                      <a href="https://github.com/peterdelm"
-                        ><i class="fab fa-github"></i
-                      ></a>
-                    </div>
-                  </div>
+                  <h1 class="animated-text">Peter Del Mastro</h1>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+                  <script>
+                    // This will run once the DOM is fully loaded
+                    window.onload = function () {
+                      gsap.from(".animated-text", {
+                        opacity: 0,
+                        y: 50,
+                        duration: 1,
+                        ease: "bounce.out",
+                      });
+                    };
+                  </script>
+                  <h2>is a Developer</h2>
                 </div>
               </div>
-              <div class="headerImageContainer">
+              <!-- <div class="headerImageContainer">
                 <img
                   src="./assets/bio_photo.jpg"
                   alt="Photo of Peter"
                   class="headerImage"
                 />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
+      <div class="headerIcon">
+        <a href="#projects">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
     </header>
     <main>
       <!-- Portfolio Projects -->
@@ -90,11 +99,7 @@
                   An API integrated fortune teller which offers advice on one
                   word queries following completion of a maze.
                 </p>
-                <ul>
-                  <li>React</li>
-                  <li>Firebase</li>
-                  <li>JavaScript</li>
-                </ul>
+
                 <div class="projLinks">
                   <a class="button" href="https://askzoltan.netlify.app/"
                     >Live Link</a
@@ -105,6 +110,11 @@
                     >GitHub</a
                   >
                 </div>
+                <ul>
+                  <li>React</li>
+                  <li>Firebase</li>
+                  <li>JavaScript</li>
+                </ul>
               </div>
             </div>
             <div class="proj projTwo">
@@ -114,11 +124,7 @@
                   A Firebase integrated gallery-style shopping page with a
                   checkout function.
                 </p>
-                <ul>
-                  <li>React</li>
-                  <li>Firebase</li>
-                  <li>JavaScript</li>
-                </ul>
+
                 <div class="projLinks">
                   <a class="button" href="https://dggallery.netlify.app/"
                     >Live Link</a
@@ -129,6 +135,11 @@
                     >GitHub</a
                   >
                 </div>
+                <ul>
+                  <li>React</li>
+                  <li>Firebase</li>
+                  <li>JavaScript</li>
+                </ul>
               </div>
             </div>
             <div class="proj projThree">
@@ -138,10 +149,7 @@
                   A multi-page website designed for a theoretical design firm,
                   featuring some JavaScript functionalities
                 </p>
-                <ul>
-                  <li>Sass</li>
-                  <li>JavaScript</li>
-                </ul>
+
                 <div class="projLinks">
                   <a
                     class="button"
@@ -154,9 +162,27 @@
                     >GitHub</a
                   >
                 </div>
+                <ul>
+                  <li>Sass</li>
+                  <li>JavaScript</li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <section class="projects">
+        <div class="wrapper">
+          <a name="projects"></a>
+          <div class="freeAgentVideo">
+            <video width="640" height="360" controls>
+              <source src="path/to/your-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h3>Portfolio</h3>
         </div>
       </section>
       <!--  -->
@@ -170,6 +196,7 @@
                   <img
                     src="./assets/bio_photo.jpg"
                     alt="pencil drawing of Peter Del Mastro with a short beard"
+                    class="headerImage"
                   />
                 </div>
               </div>
@@ -179,9 +206,10 @@
                   <h3>About Me</h3>
 
                   <p>
-                    Hi! I'm a Toronto-based developer who works mostly with
-                    Javascript. When I'm not programming I love to draw and
-                    paint, write DnD, build physical things, read and box.
+                    I’m a Toronto-based JavaScript developer with a passion for
+                    building innovative applications. Outside of coding, I enjoy
+                    drawing, reading, and 3D printing. I’m always looking for
+                    new challenges to grow both professionally and creatively.
                   </p>
                 </div>
               </div>
@@ -199,10 +227,14 @@
 
             <li><img src="./assets/icons/js-brands.svg" />Javascript</li>
             <li><img src="./assets/icons/react-brands.svg" />React</li>
-            <li><img src="./assets/icons/sass-brands.svg" /> Sass</li>
-
+            <li>
+              <img src="./assets/icons/rails-icon.svg" style="width: 80px" />
+              Ruby-on-Rails
+            </li>
             <li><img src="./assets/icons/node-js-brands.svg" />Node.js</li>
             <li><img src="./assets/icons/firebase-brands.svg" /> Firebase</li>
+            <li><img src="./assets/icons/react-brands.svg" />React Native</li>
+
             <li><img src="./assets/icons/jquery-brands.svg" /> jQuery</li>
             <li>
               <img src="./assets/icons/universal-access-solid.svg" />
@@ -232,9 +264,26 @@
           <div class="flexContact">
             <div class="contactText">
               <h3>Contact Me</h3>
-              <p>Just shoot me a message, who doesn't love a chat!</p>
+              <div class="headerSocialContainer">
+                <div class="socialLink">
+                  <a
+                    href="https://www.linkedin.com/in/peter-del-mastro-8b7981207/"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+                <div class="socialLink">
+                  <a href="https://twitter.com/mastro_peter"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+                <div class="socialLink">
+                  <a href="https://github.com/peterdelm"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="contactForm">
+            <!-- <div class="contactForm">
               <form name='contact' method "POST" data-netlify="true">
               <label class="visuallyHidden" for="name">name</label>
               <input
@@ -263,13 +312,13 @@
               <div class="buttonContainer">
                 <button class="send" type="submit">Submit</button>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>Built by Peter Del Mastro. Pencil drawing by Eduarda Sousa</p>
+      <p>Built by Peter Del Mastro</p>
     </footer>
     <script src="script.js"></script>
   </body>
