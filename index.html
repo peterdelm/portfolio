@@ -173,16 +173,69 @@
       </section>
       <!--  -->
 
-      <section class="projects">
-        <div class="wrapper">
-          <a name="projects"></a>
-          <div class="freeAgentVideo">
-            <video width="640" height="360" controls>
-              <source src="path/to/your-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+      <section class="freeAgent" style="border: 2px solid red" height="80vh">
+        <div
+          class="wrapper"
+          style="border: 2px solid blue; background-color: aqua"
+        >
+          <div class="projFlex" style="border: 2px solid red">
+            <a name="projects"></a>
+            <div
+              class="projFlex"
+              style="border: 2px solid red; display: flex; flex: 5"
+            >
+              <div
+                class="proj freeAgentVideo"
+                style="
+                  border: 2px solid green;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  /* flex: 5; */
+                  width: auto;
+                "
+              >
+                <video
+                  controls
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  height="100%"
+                  width="auto%"
+                  style="border: 2px solid green"
+                >
+                  <source src="/assets/free_agent_demo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <div
+              class="freeAgentText textContainer"
+              style="
+                border: 2px solid purple;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex: 5;
+              "
+              height="100%"
+              width="100%"
+            >
+              <h3>Free Agent</h3>
+              <p>
+                A fullstack application to connect recreational athletes with
+                leagues in need
+              </p>
+
+              <div class="projLinks"></div>
+              <ul>
+                <li>React Native</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
           </div>
-          <h3>Portfolio</h3>
         </div>
       </section>
       <!--  -->
@@ -309,8 +362,8 @@
                 placeholder="message"
                 required=""
               ></textarea>
-              <div class="buttonContainer">
-                <button class="send" type="submit">Submit</button>
+              <div class="buttonContainer"> 
+                <button class="send" type="submit">Submit</button> 
               </div>
             </div> -->
           </div>

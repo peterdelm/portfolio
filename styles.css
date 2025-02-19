@@ -504,6 +504,11 @@ ul li {
   margin-top: 40px;
 }
 
+.freeAgent {
+  height: 100vh;
+  margin-top: 40px;
+}
+
 .projFlex {
   display: flex;
   justify-content: center;
