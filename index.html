@@ -36,7 +36,7 @@
           <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#freeagent">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -55,7 +55,6 @@
                   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 
                   <script>
-                    // This will run once the DOM is fully loaded
                     window.onload = function () {
                       gsap.from(".animated-text", {
                         opacity: 0,
@@ -68,19 +67,12 @@
                   <h2>is a Developer</h2>
                 </div>
               </div>
-              <!-- <div class="headerImageContainer">
-                <img
-                  src="./assets/bio_photo.jpg"
-                  alt="Photo of Peter"
-                  class="headerImage"
-                />
-              </div> -->
             </div>
           </div>
         </div>
       </section>
       <div class="headerIcon">
-        <a href="#projects">
+        <a href="cts">
           <i class="fas fa-chevron-down"></i>
         </a>
       </div>
@@ -90,7 +82,9 @@
       <section class="projects">
         <div class="wrapper">
           <a name="projects"></a>
-          <h3>Portfolio</h3>
+          <div class="titleWrapper">
+            <h3>Portfolio</h3>
+          </div>
           <div class="projFlex">
             <div class="proj projOne">
               <div class="projText">
@@ -173,21 +167,31 @@
       </section>
       <!--  -->
 
-      <section class="freeAgent" style="border: 2px solid red" height="80vh">
+      <section class="freeAgent" height="100vh;">
+        <a name="freeagent"></a>
+
+        <div class="titleWrapper">
+          <h3>Current Projects</h3>
+        </div>
         <div
           class="wrapper"
-          style="border: 2px solid blue; background-color: aqua"
+          style="
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 40px;
+          "
         >
-          <div class="projFlex" style="border: 2px solid red">
+          <div class="freeAgentFlex" style="height: 90%; align-items: center">
             <a name="projects"></a>
+
             <div
-              class="projFlex"
-              style="border: 2px solid red; display: flex; flex: 5"
+              class="freeAgentFlex"
+              style="display: flex; flex: 5; align-items: center"
             >
               <div
                 class="proj freeAgentVideo"
                 style="
-                  border: 2px solid green;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -203,36 +207,40 @@
                   playsinline
                   height="100%"
                   width="auto%"
-                  style="border: 2px solid green"
+                  style="border: 8px solid black"
                 >
+                  >
                   <source src="/assets/free_agent_demo.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
             </div>
-            <div
-              class="freeAgentText textContainer"
-              style="
-                border: 2px solid purple;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                flex: 5;
-              "
-              height="100%"
-              width="100%"
-            >
+            <div class="freeAgentText textContainer" height="100%" width="100%">
               <h3>Free Agent</h3>
               <p>
-                A fullstack application to connect recreational athletes with
-                leagues in need
+                A full-stack mobile application for iOS and Android to connect
+                recreational athletes with leagues.
+              </p>
+              <p>
+                Secure backend API using JWTs for user authentication and
+                authorization.
+              </p>
+              <p>
+                Features frontend integration, cloud deployment, and database
+                management.
               </p>
 
-              <div class="projLinks"></div>
-              <ul>
-                <li>React Native</li>
+              <ul
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
                 <li>PostgreSQL</li>
+                <li>Express</li>
+                <li>React Native</li>
+                <li>Node.js</li>
               </ul>
             </div>
           </div>
@@ -298,7 +306,7 @@
             <li><img src="./assets/icons/blender-brands.svg" />Blender</li>
             <li><img src="./assets/icons/krita-brands.svg" />Krita</li>
           </ul>
-          <h4>Currently Learning :</h4>
+          <h4>Currently Learning</h4>
           <ul class="inProgress">
             <li><img src="./assets/icons/cpp-brands.svg" />C++</li>
             <li><img src="./assets/icons/python-brands.svg" />Python</li>

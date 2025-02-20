@@ -69,6 +69,7 @@ figcaption,
 figure,
 main {
   display: block;
+  background-color: rgb(210, 226, 232);
 }
 figure {
   margin: 1em 40px;
@@ -295,7 +296,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  color: #ff5b78;
+  color: #00bcd4; /* Change the color on hover */
 }
 .wrapper {
   max-width: 95%;
@@ -435,6 +436,7 @@ nav {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  border: 2px solid black;
 }
 
 .proj:hover {
@@ -487,6 +489,9 @@ nav {
 
 .projLinks a {
   text-decoration: none;
+  background-color: #006875;
+  border: 2px solid #36ddf3; /* Change the color on hover */
+  /* Change the color on hover */
 }
 
 ul {
@@ -501,15 +506,92 @@ ul li {
 
 .projects {
   height: 100vh;
-  margin-top: 40px;
+  padding: 40px;
 }
 
+.projects h3 {
+  background-color: #222324;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: #36ddf3;
+  border: 1px solid #00bcd4;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+}
 .freeAgent {
   height: 100vh;
-  margin-top: 40px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Space inside the box */
+  margin-top: 0px;
+  background-color: rgb(210, 226, 232);
 }
 
+.freeAgent .freeAgentFlex {
+  background-color: rgb(210, 226, 232);
+}
+
+.freeAgent .wrapper {
+  background-color: rgb(210, 226, 232);
+}
+
+.freeAgent h3 {
+  background-color: #222324;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: #36ddf3;
+  border: 1px solid #00bcd4;
+}
+
+.freeAgent li {
+  text-align: center;
+  padding: 8px 0; /* Padding for each feature */
+  font-size: 1.1em; /* Slightly larger text */
+  color: #555; /* Slightly lighter text color */
+  border-bottom: 1px solid #ddd; /* Subtle line between features */
+}
+
+.freeAgent .textContainer {
+  flex: 5;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+
+.freeAgentText {
+  text-align: center;
+  background-color: #222324;
+  border: 2px solid #00bcd4;
+}
+
+.freeAgentText p {
+  color: white;
+}
+
+.freeAgentText h3 {
+  color: #00bcd4;
+}
+
+.freeAgentText li {
+  color: #00bcd4;
+}
 .projFlex {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.freeAgentFlex {
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -527,8 +609,7 @@ ul li {
 
 .projLinks a {
   color: white;
-  /* border: 1px solid white; */
-  border-radius: 12%;
+  border-radius: 20px;
   padding: 6px;
   margin: 10px;
 }
@@ -536,7 +617,8 @@ ul li {
 .languages {
   height: auto;
   text-align: center;
-  margin-top: 50px;
+  padding: 50px;
+  background-color: rgb(210, 226, 232);
 }
 
 .languages ul {
@@ -560,8 +642,22 @@ ul li {
   max-height: 55px;
 }
 
+.languages h3 {
+  background-color: #222324;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: #00bcd4;
+  border: 1px solid #00bcd4;
+}
+
 .languages h4 {
-  color: #810017;
+  background-color: #222324;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: #36ddf3;
+  border: 1px solid #00bcd4;
 }
 
 .aboutMe {
@@ -569,6 +665,7 @@ ul li {
   background-color: rgb(210, 226, 232);
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 
 .aboutFlex {
@@ -598,12 +695,22 @@ ul li {
 .aboutImg .headerImage {
   width: 100%; /* Makes the image fill the container */
   height: 100%; /* Keeps the image proportional */
+
   object-fit: cover; /* Ensures the image fills the circle and crops it if necessary */
 }
 
 .aboutText {
   display: flex;
   align-items: center;
+  background-color: #222324;
+  border-radius: 20px;
+  border: 2px solid #00bcd4;
+  padding: 20px;
+  color: white;
+}
+
+.aboutText h3 {
+  color: #00bcd4;
 }
 
 .headerSocial ul {
@@ -628,10 +735,6 @@ ul li {
   justify-content: center;
 }
 
-.headerText {
-  /* border: 5px solid black; */
-}
-
 .headerText span {
   color: #810017;
 }
@@ -650,7 +753,16 @@ img {
   background-color: rgb(210, 226, 232);
   display: flex;
   align-items: center;
-  margin-top: 50px;
+}
+
+.contact h3 {
+  background-color: #222324;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid #00bcd4;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 form {
@@ -679,10 +791,10 @@ form {
 
 footer p {
   text-align: center;
-  background-color: #810017;
+  background-color: #222324;
   margin: 0px;
   padding: 10px;
-  color: white;
+  color: #36ddf3;
 }
 
 #message {
@@ -693,12 +805,8 @@ footer p {
   padding: 5px;
 }
 
-.aboutMe h3 {
-  color: #810017;
-}
-
 .contact h3 {
-  color: #810017;
+  color: #00bcd4;
 }
 
 .word {
@@ -733,26 +841,69 @@ footer p {
     right: 20px;
   }
 
+  .projects {
+    display: flex;
+    flex-wrap: wrap; /* Ensures projects wrap to new lines on smaller screens */
+    justify-content: space-between; /* Optional: Adds space between items */
+    margin: 0 10px; /* Adds margin around the projects container */
+    overflow: visible; /* Prevents overflow */
+    height: auto;
+  }
   .projFlex {
     flex-direction: column;
     align-items: center;
   }
   .proj {
-    width: 95%;
-    margin: 20px;
-    padding: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+    margin-bottom: 20px;
   }
 
-  .aboutMe {
+  .freeAgent {
+    display: flex;
+    flex-wrap: wrap; /* Ensures projects wrap to new lines on smaller screens */
+    justify-content: center; /* Optional: Adds space between items */
+    margin: 0 10px; /* Adds margin around the projects container */
+    overflow: visible; /* Prevents overflow */
     height: auto;
+  }
+  .freeAgent h3 {
+    margin-bottom: 0px;
+  }
 
-    padding: 20px;
+  .freeAgentFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMe {
+    display: flex;
+    flex-wrap: wrap; /* Ensures projects wrap to new lines on smaller screens */
+    justify-content: center; /* Optional: Adds space between items */
+    margin: 0 10px; /* Adds margin around the projects container */
+    overflow: visible; /* Prevents overflow */
+    height: auto;
+    padding-top: 0px;
   }
 
   .aboutFlex {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImg .imgContainer {
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+    padding-top: 0px;
+    margin-right: 0px;
   }
 
   .contact {
@@ -778,13 +929,23 @@ footer p {
     opacity: 1;
     display: flex;
     align-items: center;
-    flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
     padding: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
+  .proj:hover {
+    transform: scale(1.05);
+  }
   .headerImg {
     display: none;
   }
