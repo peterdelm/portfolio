@@ -296,7 +296,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
-  color: #00bcd4; /* Change the color on hover */
+  color: #00bcd4;
 }
 .wrapper {
   max-width: 95%;
@@ -322,11 +322,6 @@ li {
   height: 100vh;
 }
 
-nav {
-  display: flex;
-  background-color: #810017;
-}
-
 .logo a {
   text-decoration: none;
   font-size: 24px;
@@ -350,11 +345,11 @@ nav {
 }
 
 .menu a:hover {
-  color: #00bcd4; /* Change the color on hover */
+  color: #00bcd4;
 }
 
 .toggle {
-  display: none; /* Hide the toggle button by default on larger screens */
+  display: none;
   cursor: pointer;
   font-size: 24px;
   color: white;
@@ -367,7 +362,6 @@ nav {
   padding: 10px 20px;
   width: 100%;
   font-size: 1.5rem;
-  background-color: #0e100f;
 }
 
 .navContainer li {
@@ -391,7 +385,6 @@ nav {
 }
 
 .headerSocialContainer {
-  /* border: 5px solid yellow; */
   font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
@@ -405,24 +398,13 @@ nav {
 .headerTextImage {
   display: flex;
   justify-content: center;
-  /* border: 5px solid green; */
-}
-.headerImageContainer {
-  max-width: 33%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  /* border: 5px solid purple; */
-}
-.headerImage {
-  border-radius: 50%;
-  background-color: white;
-  object-fit: cover;
 }
 .headerSocial ul {
   list-style: none;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
 }
-
 .socialLink {
   margin: 20px;
 }
@@ -490,14 +472,7 @@ nav {
 .projLinks a {
   text-decoration: none;
   background-color: #006875;
-  border: 2px solid #36ddf3; /* Change the color on hover */
-  /* Change the color on hover */
-}
-
-ul {
-  display: flex;
-  padding: 0px;
-  justify-content: center;
+  border: 2px solid #36ddf3;
 }
 
 ul li {
@@ -524,9 +499,9 @@ ul li {
 }
 .freeAgent {
   height: 100vh;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  padding: 20px; /* Space inside the box */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   margin-top: 0px;
   background-color: rgb(210, 226, 232);
 }
@@ -614,6 +589,10 @@ ul li {
   margin: 10px;
 }
 
+.proj ul li {
+  padding: 5px;
+}
+
 .languages {
   height: auto;
   text-align: center;
@@ -679,24 +658,22 @@ ul li {
   justify-content: center;
   margin: 50px;
 }
-/* To make the image a circle and smaller */
+
 .aboutImg .imgContainer {
-  width: 300px; /* Adjust this to the size you want */
-  height: 300px; /* Same as width to make it a perfect circle */
-  overflow: hidden; /* Ensures the image doesn't overflow the container */
-  border-radius: 50%; /* Makes the container a circle */
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
+  justify-content: center;
+  align-items: center;
   margin-right: 100px;
 }
 
-/* To make the image fit inside the circle */
 .aboutImg .headerImage {
-  width: 100%; /* Makes the image fill the container */
-  height: 100%; /* Keeps the image proportional */
-
-  object-fit: cover; /* Ensures the image fills the circle and crops it if necessary */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .aboutText {
@@ -726,7 +703,6 @@ ul li {
 
 .headerTextSocial {
   display: flex;
-  /* border: 5px solid blue; */
   margin: 10px;
   padding-left: 80px;
   padding-right: 80px;
@@ -735,9 +711,6 @@ ul li {
   justify-content: center;
 }
 
-.headerText span {
-  color: #810017;
-}
 .imgContainer {
   max-height: 60vh;
   height: auto;
@@ -765,28 +738,11 @@ img {
   margin-bottom: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  height: 40vh;
-  justify-content: space-around;
-}
-
 .flexContact {
   display: flex;
-
   align-items: center;
   justify-content: center;
   height: 25vh;
-}
-
-.contactText {
-  width: 50%;
-  text-align: center;
-}
-
-.contactForm {
-  width: 50%;
 }
 
 footer p {
@@ -801,20 +757,8 @@ footer p {
   height: 50%;
 }
 
-.proj ul li {
-  padding: 5px;
-}
-
 .contact h3 {
   color: #00bcd4;
-}
-
-.word {
-  height: 100%;
-  margin: auto;
-  color: white;
-  font: 700 normal 2.5em "tahoma";
-  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
 @media (max-width: 750px) {
